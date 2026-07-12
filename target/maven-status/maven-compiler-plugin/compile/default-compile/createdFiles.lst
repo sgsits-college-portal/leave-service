@@ -1,0 +1,10 @@
+com\leave\leave_management_system\repository\LeaveRepository.class
+com\leave\leave_management_system\entity\LeaveRequest.class
+com\leave\leave_management_system\service\LeaveService.class
+com\leave\leave_management_system\service\EmployeeService.class
+com\leave\leave_management_system\LeaveManagementSystemApplication.class
+com\leave\leave_management_system\repository\EmployeeRepository.class
+com\leave\leave_management_system\controller\EmployeeController.class
+com\leave\leave_management_system\entity\Employee.class
+com\leave\leave_management_system\repository\LeaveRequestRepository.class
+com\leave\leave_management_system\controller\LeaveController.class
