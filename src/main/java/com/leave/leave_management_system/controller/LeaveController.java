@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/leave")
+@RequestMapping({"/api/leave", "/leave"})
 @CrossOrigin("*")
 public class LeaveController {
 
@@ -39,5 +39,4 @@ public class LeaveController {
     public LeaveRequest reject(@PathVariable Long id) {
         return service.rejectLeave(id);
     }
-
 }
