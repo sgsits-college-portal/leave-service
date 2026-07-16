@@ -5,6 +5,8 @@ import com.leave.leave_management_system.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import org.springframework.security.access.prepost.PreAuthorize;
+
 @RestController
 @RequestMapping("/employee")
 @CrossOrigin("*")
@@ -14,11 +16,13 @@ public class EmployeeController {
     EmployeeService service;
 
     @PostMapping("/register")
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     public Employee register(@RequestBody Employee employee){
         return service.save(employee);
     }
 
     @PostMapping("/login")
+    @PreAuthorize("permitAll()")
     public Employee login(@RequestBody Employee employee){
 
         System.out.println("=================================");
