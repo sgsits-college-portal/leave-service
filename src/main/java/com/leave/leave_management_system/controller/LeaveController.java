@@ -11,7 +11,6 @@ import org.springframework.security.access.prepost.PreAuthorize;
 
 @RestController
 @RequestMapping("/leave")
-@CrossOrigin("*")
 public class LeaveController {
 
     @Autowired
