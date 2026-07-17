@@ -16,9 +16,7 @@ public class LeaveRequest {
     private String reason;
     private String status;
 
-    @ManyToOne
-    @JoinColumn(name = "employee_id")
-    private Employee employee;
+    private Long employeeId;
 
     public LeaveRequest() {}
 
@@ -70,11 +68,11 @@ public class LeaveRequest {
         this.status = status;
     }
 
-    public Employee getEmployee() {
-        return employee;
+    public Long getEmployeeId() {
+        return employeeId;
     }
 
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
+    public void setEmployeeId(Long employeeId) {
+        this.employeeId = employeeId;
     }
 }
