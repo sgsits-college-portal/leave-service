@@ -16,6 +16,7 @@ public class LeaveRequest {
     private String reason;
     private String status;
 
+    @Column(name = "applicant_id")
     private Long employeeId;
 
     public LeaveRequest() {}
